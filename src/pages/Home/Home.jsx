@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { fetchTrendingMovies } from 'FetchAPI';
+import { MoviesList, MovieLink } from './Home.styled';
 
-export const Home = () => {
+const Home = () => {
   const [movies, setMovies] = useState([]);
+  const location = useLocation();
+  console.log('home', location);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -25,12 +28,16 @@ export const Home = () => {
   console.log(movies);
 
   return (
-    <ul>
+    <MoviesList>
       {movies.map(({ title, id }) => (
         <li key={id}>
-          <Link to={`movies/${id}`}>{title}</Link>
+          <MovieLink to={`movies/${id}`} state={{ from: location }}>
+            {title}
+          </MovieLink>
         </li>
       ))}
-    </ul>
+    </MoviesList>
   );
 };
+
+export default Home;

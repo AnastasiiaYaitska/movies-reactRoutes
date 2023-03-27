@@ -11,6 +11,27 @@ export const fetchTrendingMovies = async param => {
 
 export const fetchMovieById = async (movieId, param) => {
   const response = await axios.get(`/movie/${movieId}`, param);
-  console.log(response.data);
   return response.data;
+};
+
+export const fetchMovieActorsById = async (movieId, param) => {
+  const response = await axios.get(`/movie/${movieId}/credits`, param);
+  return response.data.cast;
+};
+
+export const fetchMovieReviewsById = async (movieId, param) => {
+  const response = await axios.get(`/movie/${movieId}/reviews`, param);
+  return response.data.results;
+};
+
+export const fetchSearchMovie = async (request, extraParam) => {
+  const response = await axios.get(`/search/movie`, {
+    params: {
+      language: 'en-US',
+      query: request,
+      include_adult: false,
+    },
+    ...extraParam,
+  });
+  return response.data.results;
 };
