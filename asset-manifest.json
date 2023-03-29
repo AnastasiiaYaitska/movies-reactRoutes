@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/movies-reactRoutes/static/css/main.7acaea2f.css",
-    "main.js": "/movies-reactRoutes/static/js/main.5699f95a.js",
-    "static/js/304.7c4c606b.chunk.js": "/movies-reactRoutes/static/js/304.7c4c606b.chunk.js",
-    "static/js/278.3c18362f.chunk.js": "/movies-reactRoutes/static/js/278.3c18362f.chunk.js",
-    "static/js/33.b83d0422.chunk.js": "/movies-reactRoutes/static/js/33.b83d0422.chunk.js",
+    "main.js": "/movies-reactRoutes/static/js/main.54cb5f64.js",
+    "static/js/544.1a717743.chunk.js": "/movies-reactRoutes/static/js/544.1a717743.chunk.js",
+    "static/js/278.120b6add.chunk.js": "/movies-reactRoutes/static/js/278.120b6add.chunk.js",
+    "static/js/33.9bd6395a.chunk.js": "/movies-reactRoutes/static/js/33.9bd6395a.chunk.js",
     "static/js/387.242ba92c.chunk.js": "/movies-reactRoutes/static/js/387.242ba92c.chunk.js",
-    "static/js/779.eab255e0.chunk.js": "/movies-reactRoutes/static/js/779.eab255e0.chunk.js",
+    "static/js/779.bea4a599.chunk.js": "/movies-reactRoutes/static/js/779.bea4a599.chunk.js",
     "static/js/817.1c6a48dd.chunk.js": "/movies-reactRoutes/static/js/817.1c6a48dd.chunk.js",
     "static/js/185.7ccd66d4.chunk.js": "/movies-reactRoutes/static/js/185.7ccd66d4.chunk.js",
     "index.html": "/movies-reactRoutes/index.html",
     "main.7acaea2f.css.map": "/movies-reactRoutes/static/css/main.7acaea2f.css.map",
-    "main.5699f95a.js.map": "/movies-reactRoutes/static/js/main.5699f95a.js.map",
-    "304.7c4c606b.chunk.js.map": "/movies-reactRoutes/static/js/304.7c4c606b.chunk.js.map",
-    "278.3c18362f.chunk.js.map": "/movies-reactRoutes/static/js/278.3c18362f.chunk.js.map",
-    "33.b83d0422.chunk.js.map": "/movies-reactRoutes/static/js/33.b83d0422.chunk.js.map",
+    "main.54cb5f64.js.map": "/movies-reactRoutes/static/js/main.54cb5f64.js.map",
+    "544.1a717743.chunk.js.map": "/movies-reactRoutes/static/js/544.1a717743.chunk.js.map",
+    "278.120b6add.chunk.js.map": "/movies-reactRoutes/static/js/278.120b6add.chunk.js.map",
+    "33.9bd6395a.chunk.js.map": "/movies-reactRoutes/static/js/33.9bd6395a.chunk.js.map",
     "387.242ba92c.chunk.js.map": "/movies-reactRoutes/static/js/387.242ba92c.chunk.js.map",
-    "779.eab255e0.chunk.js.map": "/movies-reactRoutes/static/js/779.eab255e0.chunk.js.map",
+    "779.bea4a599.chunk.js.map": "/movies-reactRoutes/static/js/779.bea4a599.chunk.js.map",
     "817.1c6a48dd.chunk.js.map": "/movies-reactRoutes/static/js/817.1c6a48dd.chunk.js.map",
     "185.7ccd66d4.chunk.js.map": "/movies-reactRoutes/static/js/185.7ccd66d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.5699f95a.js"
+    "static/js/main.54cb5f64.js"
   ]
 }
