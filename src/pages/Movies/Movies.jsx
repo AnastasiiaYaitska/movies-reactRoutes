@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { useLocation, useSearchParams } from 'react-router-dom';
 import { fetchSearchMovie } from 'FetchAPI';
+import { MoviesList } from 'components/MoviesLIst/MoviesList';
 
 const Movies = () => {
   const [queryMovie, setQueryMovie] = useState([]);
@@ -8,7 +9,6 @@ const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query') ?? '';
   const location = useLocation();
-  console.log('movie', location);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -59,15 +59,7 @@ const Movies = () => {
         </label>
         <button type="submit">Search</button>
       </form>
-      <ul>
-        {queryMovie.map(({ title, id }) => (
-          <li key={id}>
-            <Link to={`${id}`} state={{ form: location }}>
-              {title}
-            </Link>{' '}
-          </li>
-        ))}
-      </ul>
+      <MoviesList movies={queryMovie} to={id => `${id}`} location={location} />
     </>
   );
 };

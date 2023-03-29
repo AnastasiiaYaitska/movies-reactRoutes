@@ -10,7 +10,6 @@ const MovieDetails = () => {
   const { movieId } = useParams();
   const location = useLocation();
   const goBackRef = useRef(location.state?.from ?? '/movies');
-  console.log('goBackRef', location);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -33,7 +32,6 @@ const MovieDetails = () => {
   }, [movieId]);
 
   const { title, vote_average, overview, genres, poster_path, tagline } = movie;
-  console.log(genres);
 
   return (
     <>
@@ -49,7 +47,7 @@ const MovieDetails = () => {
         />
         <Description>
           <Title>{title}</Title>
-          <p> User Score: {vote_average * 10} %</p>
+          <p> User Score: {(vote_average * 10).toFixed()} %</p>
           <h2>Overview</h2>
           <p>{overview}</p>
           <h3>Genres</h3>

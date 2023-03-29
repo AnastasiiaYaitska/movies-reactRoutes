@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const MoviesList = styled.ul`
+export const List = styled.ul`
   list-style: none;
   padding-left: 0;
   display: flex;

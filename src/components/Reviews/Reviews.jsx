@@ -15,7 +15,6 @@ const Reviews = () => {
         const fetchedReviews = await fetchMovieReviewsById(movieId, {
           signal: abortController.signal,
         });
-        console.log(fetchedReviews);
         setReviews(fetchedReviews);
       } catch (error) {
         console.log(error.message);
