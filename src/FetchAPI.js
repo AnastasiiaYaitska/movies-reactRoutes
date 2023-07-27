@@ -6,6 +6,7 @@ axios.defaults.headers.common['Authorization'] =
 
 export const fetchTrendingMovies = async param => {
   const response = await axios.get('/trending/movie/week', param);
+  console.log(response.data.results);
   return response.data.results;
 };
 

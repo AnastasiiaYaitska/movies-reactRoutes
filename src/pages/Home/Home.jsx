@@ -15,6 +15,7 @@ const Home = () => {
         const trendingMovies = await fetchTrendingMovies({
           signal: abortController.signal,
         });
+        console.log(trendingMovies);
         setMovies(trendingMovies);
       } catch (error) {
         console.log(error.message);
